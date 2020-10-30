@@ -56,6 +56,8 @@ const mergeSort = array => {
     return merge(left, right, array);
 };
 
+// keep choosing the lowest value from the left or right arrays that hasn't already been added to the output array
+// when 1 of the arrays is empty, you add all of the remaining values from the other array to it
 const merge = (left, right, array) => {
     let leftIndex = 0;
     let rightIndex = 0;
